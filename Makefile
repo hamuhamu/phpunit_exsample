@@ -1,4 +1,5 @@
 .PHONY: test
+PHPUNIT=./vendor/phpunit/phpunit/phpunit
 
 test:
-	phpunit --configuration phpunit.xml test/
+	$(PHPUNIT) --configuration phpunit.xml test/
